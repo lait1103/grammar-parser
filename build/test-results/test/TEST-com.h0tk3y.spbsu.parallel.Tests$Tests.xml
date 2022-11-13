@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.h0tk3y.spbsu.parallel.Tests$Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-13T20:38:08" hostname="MBP-Dmitri" time="0.041">
-  <properties/>
-  <testcase name="test3" classname="com.h0tk3y.spbsu.parallel.Tests$Tests" time="0.041"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
