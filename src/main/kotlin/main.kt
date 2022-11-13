@@ -11,20 +11,20 @@ import java.io.File
 
 fun pars(file: File): String {
     val myParser = MyParser()
-    var calculations = ""
+    val result = java.lang.StringBuilder()
     file.forEachLine { inp ->
         val inputStream: CharStream = CharStreams.fromString(
             inp
         )
 
-        calculations += inp.dropLast(1).split('=')[0].trim() + " = " + myParser.visitStart(
+        result.append(inp.dropLast(1).split('=')[0].trim() + " = " + myParser.visitStart(
             helpMeParser(
                 CommonTokenStream(helpMeLexer(inputStream))
             ).start()
-        )?.toString() + ";\n"
+        )?.toString() + ";\n")
 
     }
-    return calculations
+    return result.toString()
 }
 
 fun main(args: Array<String>) {
